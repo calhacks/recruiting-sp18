@@ -141,3 +141,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc00439b', e
 	text-decoration:none;
 	opacity:0.8;
 }
+
+.images img {	
+	height: 150px;
+	margin-left: 50px;
+	cursor: pointer;
+}
