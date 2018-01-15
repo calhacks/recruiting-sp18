@@ -30,7 +30,8 @@
             <h2>Cal Hacks</h2>
           </div>
           <div class="col-lg-6 hidden-xs">
-            <p class="text-right"><a href="#about">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://tinyurl.com/joincalhacks">JOIN</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:team@calhacks.io">CONTACT</a></p>
+            <p class="text-right"><a class="clickable" href="#about">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://tinyurl.com/calhacks-sp18">JOIN</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:team@calhacks.io">CONTACT</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="clickable" href="#sponsors">SPONSORS</a></p>
           </div>
         </div>
         <div class="row title">
@@ -47,7 +48,7 @@
           <div class="col-lg-8 col-lg-offset-2">
             <h1>Join the Cal Hacks family.</h1>
             <p>Cal Hacks is an annual hackathon hosted by UC Berkeley students. We work year round to put on a great event in the Fall. With over 2000 hackers in attendance from around the world, we strive to create an incredible experience for all those who attend, and witness the culmination of our hard work in the outstanding projects developed at the hackathon. From designing advertisements to securing sponsors, it’s an incredible experience.</p>
-            <a class="app" href="http://tinyurl.com/joincalhacks">Apply Now</a>
+            <a class="app" href="https://tinyurl.com/calhacks-sp18">Apply Now</a>
             <img src="img/team2.jpg" style="margin-top:80px" width="100%">
             <h1>Why Cal Hacks?</h1>
             <p>Shift gears from your usual academics into a world of planning for thousands of people for one packed weekend. From booking buses for schools across California to closing sponsors for $50k, Cal Hacks will be incredible learning experience. Directors pick up tasks that interest them and are never limited to just working on one area. Our team comes from a large variety of majors, interests, and backgrounds.</p>
@@ -76,14 +77,14 @@
             </div>
             <h1>Recruiting Schedule.</h1>
             <div class="schedule">
-              <p><b>Infosession #1</b>: Wednesday 1/25 7-8PM @ Banatao Auditorium in SDH</p>
-              <p><b>Calapalooza Tabling</b>: Thursday 1/26 @ Sproul</p>
-              <p><b>Infosession #2</b>: Thursday 1/26 7-8PM @ Banatao Auditorium in SDH</p>
-              <p><b>Applications Due</b>: Friday 1/27 Midnight</p>
-              <p><b>Coffee Chats</b>: Week of 1/30 by Invitation</p>
-              <p><b>Interview Round 2</b>: Week of 2/6 by Invitation</p>
+              <p><b>Infosession #1</b>: Monday 1/22 7-8PM @ The House 2560 Bancroft Way</p>
+              <p><b>Infosession #2</b>: Thursday 1/25 7-8PM @ The House 2560 Bancroft Way</p>
+              <p><b>Applications Due</b>: Friday 1/26 Midnight</p>
+              <p><b>Mixer</b>: Tuesday 1/30 and Wednesday 1/31 by Invitation</p>
+              <p><b>Coffee Chats</b>: 2/1 - 2/4 by Invitation</p>
+              <p><b>Interviews</b>: 2/5 - 2/7 by Invitation</p>
               <br>
-              <a class="app" href="http://tinyurl.com/joincalhacks">Apply Now</a>
+              <a class="app" href="https://tinyurl.com/calhacks-sp18">Apply Now</a>
             </div>
             <br>
             <h1>Frequently Asked Questions.</h1>
@@ -101,7 +102,17 @@
             <p>The time commitment ramps as the hackathon becomes closer in the Fall and you should be ready to commit a significant amount of time to the event.</p>
             <h3>I’m really excited about this, what can I do to make my application stand out?</h3>
             <p> If possible, come to one of our infosessions and talk to our curernt directors. It becomes a lot easier to make a decision when we have a face to pair with the online application.</p>
-            <a class="app" href="http://tinyurl.com/joincalhacks">Apply Now</a>
+            <a class="app" href="https://tinyurl.com/calhacks-sp18">Apply Now</a>
+            <br>
+            <h1 id="sponsors">Sponsors</h1>
+            <h3>We'd like to thank our sponsors for making Cal Hacks and Cal Hacks recruiting possible.</h3>
+            <div class="col-lg-8"> 
+              <img aria-label="the house" src=""/> 
+              <img aria-label="skydeck" src=""/> 
+              <img aria-label="1517" src=""/> 
+              <img aria-label="cal hacks org" src=""/> 
+              <img aria-label="HVF" src=""/> 
+            </div>
           </div>
         </div>
       </div>
@@ -121,5 +132,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".clickable").click(function() {
+          $("#"+$(this).text().toLowerCase()).scrollIntoView({
+            behavior: 'smooth'
+          })
+        })
+      })
+    </script>
   </body>
 </html>
