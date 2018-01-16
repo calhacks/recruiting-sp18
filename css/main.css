@@ -147,3 +147,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc00439b', e
 	margin-left: 50px;
 	cursor: pointer;
 }
+
+.images a {
+	transition: 0.4s;
+	opacity: 0.8;
+}
+
+.images a:hover {
+	opacity: 1;
+}
